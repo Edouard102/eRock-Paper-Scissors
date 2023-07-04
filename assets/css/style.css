@@ -2,6 +2,12 @@
 
 
 /*  main view setup*/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 html {
     min-width: 100%;
     position: relative;
@@ -18,7 +24,8 @@ body {
 
 header {
     text-align: center;
-    height: 50px;
+    height: 100px;
+
 }
 
 footer {
@@ -31,7 +38,52 @@ footer {
     padding-top: 5px;
     text-align: center;
     color: #212529;
-    background-color: #F7F7F7;
+    background-color: white;
+}
+
+
+/* score area*/
+
+.score-area {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+    text-align: center;
+    font-size: 35px;
+    background-color: white;
+    padding: var(--btn-padding);
+    border-radius: 15px;
+}
+
+/* control*/
+
+.control {
+    position: relative;
+    left: 25%;
+    top: 200px;
+    width: 50%;
+    height: 120px;
+    display: inline-block;
+    margin: 2px;
+    text-align: center;
+    background-color: white;
+}
+
+.bpapper {
+    float: left;
+}
+
+.bscissors {
+    float: auto;
+}
+
+.brocks {
+    float: right;
 }
 
 /* game area*/
@@ -45,12 +97,6 @@ footer {
     text-align: center;
 }
 
-.control {
-    display: inline-block;
-    margin: 2px;
-    width: 80px;
-    height: 40px;
-}
 
 .player {
     background-color: #212529;
