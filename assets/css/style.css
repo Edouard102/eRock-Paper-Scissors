@@ -67,7 +67,7 @@ footer {
 }
 
 #reset:hover {
-    color: var(--action);
+    color: yellow;
 }
 
 /* control*/
@@ -101,9 +101,9 @@ btn--player #message {
 #next {
     margin-top: 20px;
     padding: 10px 30px;
-    background-color: var(--action);
-    color: white;
-    border-radius: var(--border-radius);
+    background-color: green;
+    color: blue;
+    border-radius: black;
     visibility: hidden;
     cursor: pointer;
 }
@@ -145,7 +145,7 @@ btn--player #message {
 }
 
 .btn--player.desactivated {
-    background-color: var(--back);
+    background-color: blue;
     cursor: default;
 }
 
@@ -155,7 +155,7 @@ btn--player #message {
 }
 
 .btn--player.active {
-    background-color: var(--primary);
+    background-color: red;
 }
 
 /* game area*/
@@ -185,6 +185,7 @@ btn--player #message {
     border-radius: 15px;
 }
 
+/*images Rock-Paper-Scissors */
 .imagerps {
     width: 400px;
     height: auto;
@@ -192,6 +193,42 @@ btn--player #message {
     border-color: black;
     border-width: 2px;
     margin-top: 100px;
+}
+
+.imagepapper {
+    width: 400px;
+    height: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 100px;
+}
+
+.imagescissors {
+    width: 400px;
+    height: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 100px;
+}
+
+.imagerocks {
+    width: 400px;
+    height: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 100px;
+}
+
+.imagepapper,
+.imagescissors,
+.imagerocks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
 }
 
 /* --------- Media queries */
