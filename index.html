@@ -32,31 +32,34 @@
 
     <!-- control -->
 
-    <div class="control">Your turn to play!
+    <div class="control">
+        <p id="message">Your turn to play!</p>
 
-        <button class="bpapper">
-            <i class="fa-thin fa-hand">button papper </i>
+        <button class="btn btn--player btn--bpapper">
+            <i class="fa-thin fa-hand" alt="papper"> </i>
         </button>
 
-        <button class="bscissors">
-            <i class="fa-thin fa-hand-scissors">button scissors</i>
+        <button class="btn btn--player btn--bscissors">
+            <i class="fa-thin fa-hand-scissors" alt="scissors"></i>
         </button>
 
-        <button class="brocks">
-            <i class="fa-light fa-hand-fist">button rocks</i>
+        <button class="btn btn--player btn--bbrocks">
+            <i class="fa-light fa-hand-fist" alt="rocks"></i>
         </button>
 
         <div id="next">Next turn!</div>
     </div>
 
+
     <!-- game area -->
+
     <div class="game-area">
 
-        <div>computer area
+        <div class="computer">Computer area
             <img class="imagerps" src="assets/images/rpc.png" alt="image-Rock-Paper-Scissors">
         </div>
 
-        <div class="player"> player area
+        <div class="player"> Player area
             <img class="imagerps" src="assets/images/rpc.png" alt="image-Rock-Paper-Scissors">
         </div>
     </div>
