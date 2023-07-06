@@ -195,7 +195,7 @@ btn--player #message {
     margin-top: 100px;
 }
 
-.imagepapper {
+.imagepaper {
     width: 400px;
     height: auto;
     border-style: solid;
@@ -222,7 +222,7 @@ btn--player #message {
     margin-top: 100px;
 }
 
-.imagepapper,
+.imagepaper,
 .imagescissors,
 .imagerocks {
     position: absolute;
