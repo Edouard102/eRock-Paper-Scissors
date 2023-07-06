@@ -46,7 +46,7 @@ footer {
 
 .score-area {
     position: absolute;
-    left: 40%;
+    left: 35%;
     width: 25%;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -56,7 +56,7 @@ footer {
     text-align: center;
     font-size: 35px;
     background-color: white;
-    padding: var(--btn-padding);
+    padding: 20px;
     border-radius: 15px;
 }
 
@@ -67,14 +67,14 @@ footer {
 }
 
 #reset:hover {
-    color: yellow;
+    color: red;
 }
 
 /* control*/
 
 .control {
     position: relative;
-    left: 40%;
+    left: 35%;
     top: 200px;
     width: 25%;
     height: 120px;
@@ -91,7 +91,7 @@ footer {
     width: 110px;
     height: 50px;
     font-size: 3.2rem;
-    padding: var(--btn-padding);
+    padding: 20px;
 }
 
 btn--player #message {
@@ -103,7 +103,7 @@ btn--player #message {
     padding: 10px 30px;
     background-color: green;
     color: blue;
-    border-radius: black;
+    border-radius: 15%;
     visibility: hidden;
     cursor: pointer;
 }
@@ -129,33 +129,11 @@ btn--player #message {
 
 .btn--player {
     cursor: pointer;
-    background-color: white;
+    background-color: red;
 }
 
 .btn--player:hover {
-    color: var(--primary);
-}
-
-.button p {
-    margin-left: 20px;
-}
-
-.btn:not(:last-child) {
-    margin-bottom: 40px;
-}
-
-.btn--player.desactivated {
-    background-color: blue;
-    cursor: default;
-}
-
-.btn--player-.desactivated:hover,
-.btn--player.active {
-    color: inherit;
-}
-
-.btn--player.active {
-    background-color: red;
+    color: red;
 }
 
 /* game area*/
@@ -222,17 +200,38 @@ btn--player #message {
     margin-top: 100px;
 }
 
-.imagepaper,
-.imagescissors,
-.imagerocks {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+/* */
+.imagerps--computer:first-child {
+    opacity: 1;
+}
+
+.imagerps--computer:not(:first-child) {
     opacity: 0;
+}
+
+.imagerps--computer.desactivated {
+    pointer-events: none;
+    cursor: default;
+}
+
+
+/* */
+.imagerps--player:first-child {
+    opacity: 1;
+}
+
+.imagerps--player:not(:first-child) {
+    opacity: 0;
+}
+
+.imagerps--player.desactivated {
+    pointer-events: none;
+    cursor: default;
 }
 
 /* --------- Media queries */
 
-@media (max-width: 414px) {
+@media (max-width: 414px) {}
 
-    @media (max-width: 320px) {
+@media (max-width: 320px) {}

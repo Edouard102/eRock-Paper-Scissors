@@ -35,13 +35,14 @@
     <div class="control">
         <p id="message">Your turn to play!</p>
 
-        <button class="btn btn--player btn--bpaper"><i class="fa-thin fa-hand">Paper</i>
+        <button class="btn btn--player btn--bpaper" id="bpaper"><i class="fa-thin fa-hand">Paper</i>
         </button>
 
-        <button class="btn btn--player btn--bscissors"><i class="fa-thin fa-hand-scissors"></i>Scissors</i>
+        <button class="btn btn--player btn--bscissors" id="bscissors"><i
+                class="fa-thin fa-hand-scissors"></i>Scissors</i>
         </button>
 
-        <button class="btn btn--player btn--bbrocks"><i class="fa-light fa-hand-fist"></i>Rocks</i>
+        <button class="btn btn--player btn--bbrocks" id="bbrocks"><i class="fa-light fa-hand-fist"></i>Rocks</i>
         </button>
 
         <div id="next">Next turn!</div>
@@ -51,26 +52,26 @@
 
     <div class="game-area">
 
-        <div class="computer">Computer area
-            <img class="imagerps imagerps--computer imagerps--crps" src="assets/images/rpc.png"
+        <div class="computer">Computer
+            <img class="imagerps imagerps--computer imagerps--crps" id="image-crps" src="assets/images/rpc.png"
                 alt="image-Rock-Paper-Scissors">
-            <img class="imagepaper imagerps--computer imagepaper--cpaper" src="assets/images/paper hand.png"
-                alt="Paper hand">
-            <img class="imagescissors imagerps--computer imagescissors--cscissors" src="assets/images/scissors hand.png"
-                alt="Scissors hand">
-            <img class="imagerocks imagerps--computer imagerocks--crocks" src="assets/images/rock hand.png"
-                alt="Rocks hand">
+            <img class="imagepaper imagerps--computer imagepaper--cpaper" id="image-cpaper"
+                src="assets/images/paper hand.png" alt="Paper hand">
+            <img class="imagescissors imagerps--computer imagescissors--cscissors" id="image-cscissors"
+                src="assets/images/scissors hand.png" alt="Scissors hand">
+            <img class="imagerocks imagerps--computer imagerocks--crocks" id="image-crocks"
+                src="assets/images/rock hand.png" alt="Rocks hand">
         </div>
 
-        <div class="player"> Player area
-            <img class="imagerps imagerps--player imagerps--prps" src="assets/images/rpc.png"
+        <div class="player"> Player
+            <img class="imagerps imagerps--player imagerps--prps" src="assets/images/rpc.png" id="image-prps"
                 alt="image-Rock-Paper-Scissors">
-            <img class="imagepaper imagepaper--player imagepaper--ppaper" src="assets/images/paper hand.png"
-                alt="Paper hand">
-            <img class="imagescissors imagescissors--player imagescissors--pscissors"
-                src="assets/images/scissors hand.png" alt="Scissors hand">
-            <img class="imagerocks imagrocks--player imagerocks--procks" src="assets/images/rock hand.png"
-                alt="Rocks hand">
+            <img class="imagepaper imagerps--player imagepaper--ppaper" id="image-ppaper"
+                src="assets/images/paper hand.png" alt="Paper hand">
+            <img class="imagescissors imagerps--player imagescissors--player imagescissors--pscissors"
+                id="image-pscissors" src="assets/images/scissors hand.png" alt="Scissors hand">
+            <img class="imagerocks imagerps--player imagrocks--player imagerocks--procks" id="image-procks"
+                src="assets/images/rock hand.png" alt="Rocks hand">
         </div>
     </div>
 
