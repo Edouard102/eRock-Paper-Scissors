@@ -204,10 +204,12 @@ btn--player #message {
 /* */
 .imagerps--computer:first-child {
     opacity: 1;
+    position: absolute;
 }
 
 .imagerps--computer:not(:first-child) {
     opacity: 0;
+    position: relative;
 }
 
 .imagerps--computer.desactivated {
@@ -219,10 +221,12 @@ btn--player #message {
 /* */
 .imagerps--player:first-child {
     opacity: 1;
+    position: absolute;
 }
 
 .imagerps--player:not(:first-child) {
     opacity: 0;
+    position: relative;
 }
 
 .imagerps--player.desactivated {
