@@ -35,41 +35,41 @@ let imagePlayerRocks = document.getElementById("image-procks");
 
 
 
-
 // play game
 
-const playGame = (e) => {
+function playRound(e) {
 
-    // player game buttom
+    // player game buttom (player choice)
     let choice = e.target.closest(".btn--player");
 
     btnPlayer.forEach((btn) => {
         btn.classList.add("desactivated");
-        btn.removeEventListener("click", playGame);
+        btn.removeEventListener("click", playRound);
     });
 
-    let choiceImage = null;
+    // image choice
+    let choiceImagePlayer = null;
 
     if (e.target === btnPaper) {
-        choiceImage = imagePlayerPaper;
+        choiceImagePlayer = imagePlayerPaper;
     } else if (e.target === btnScissors) {
-        choiceImage = imagePlayerScissors;
+        choiceImagePlayer = imagePlayerScissors;
     } else if (e.target === btnRocks) {
-        choiceImage = imagePlayerRocks;
+        choiceImagePlayer = imagePlayerRocks;
     }
-    if (choiceImage) {
-        choiceImage.style.opacity = 1;
+    if (choiceImagePlayer) {
+        choiceImagePlayer.style.opacity = 1;
     }
 
 
-    let PlayerChoice = choice.id;
+    let playerChoice = choice.id;
 
     let computerChoice = makeComputerChoice();
 
     checkWinner(playerChoice, computerChoice);
 
     nextBtn.style.visibility = "visible";
-};
+}
 
 // Computer choice
 
@@ -77,14 +77,14 @@ const paper = "paper";
 const scissors = "scissors";
 const rocks = "rocks";
 
-const makeComputerChoice = () => {
+function makeComputerChoice() {
     // 0 = Paper
     // 1 = Scissors
     // 2 = Rocks
+    let nbRandom = Math.floor(Math.random() * 3);
 
-    let nbAleatoire = Math.floor(Math.random() * 3);
-
-    switch (nbAleatoire) {
+    // choice image
+    switch (nbRandom) {
         case 0:
             imageComputerPaper.classList.add("active");
             return paper;
@@ -96,51 +96,73 @@ const makeComputerChoice = () => {
             return rocks;
 
     }
-};
+}
 // check winner 
 
-const checkWinner = (playerChoice, computerChoice) => {
+function checkWinner(playerChoice, computerChoice) {
     if (playerChoice == computerChoice) {
-        message.textContent = "Equality !";
+        message.textContent = "Tie !";
         return;
     }
 
-    if (playerChoice == rocks) {
-        if (computerChoice == paper) {
+    if (playerChoice == "rocks") {
+        if (computerChoice == "paper") {
             return victoryComputer();
         } else if (computerChoice == scissors) {
             return victoryPlayer();
         }
     }
 
-    if (playerChoice == paper) {
-        if (computerChoice == scissors) {
+    if (playerChoice == "paper") {
+        if (computerChoice == "scissors") {
             return victoryComputer();
-        } else if (computerChoice == rocks) {
+        } else if (computerChoice == "rocks") {
             return victoryPlayer();
         }
     }
 
-    if (playerChoice == scissors) {
-        if (computerChoice == rocks) {
+    if (playerChoice == "scissors") {
+        if (computerChoice == "rocks") {
             return victoryComputer();
-        } else if (computerChoice == paper) {
+        } else if (computerChoice == "paper") {
             return victoryPlayer();
         }
     }
-};
+}
 
 //  update score
 
-const victoryComputer = () => {
+function victoryComputer() {
     message.textContent = "The computer wins...";
     scoreComputer.textContent++;
-};
+}
 
-const victoryPlayer = () => {
+function victoryPlayer() {
     message.textContent = "You win ! :)";
     scorePlayer.textContent++;
-};
+}
+//  new round
 
 
-btnPlayer.forEach((btn) => btn.addEventListener("click", playGame));
+function newRound() {
+    btnPlayer.forEach((btn) => {
+        btn.classList.remove("desactivated");
+        btn.classList.remove("active");
+        btn.addEventListener("click", playRound);
+    });
+
+    nextBtn.style.visibility = "hidden";
+
+    imageComputerPaper.classList.remove("active");
+    imageComputerScissors.classList.remove("active");
+    imageComputerRocks.classList.remove("active");
+
+    message.textContent = "Your turn to play!";
+}
+
+nextBtn.addEventListener("click", newRound);
+btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
+
+
+// restart game
+
