@@ -16,7 +16,7 @@ let nextBtn = document.getElementById("next");
 let btnPlayer = [...document.getElementsByClassName("btn--player")];
 let btnPaper = document.getElementById("bpaper");
 let btnScissors = document.getElementById("bscissors");
-let btnRocks = document.getElementById("bbrocks");
+let btnRocks = document.getElementById("bocks");
 
 // variable  computer
 let imageComputer = [...document.getElementsByClassName("imagerps--computer")];
@@ -143,26 +143,25 @@ function victoryPlayer() {
 }
 //  new round
 
-
 function newRound() {
     btnPlayer.forEach((btn) => {
         btn.classList.remove("desactivated");
         btn.classList.remove("active");
+
         btn.addEventListener("click", playRound);
     });
 
     nextBtn.style.visibility = "hidden";
 
     imageComputerPaper.classList.remove("active");
-    imageComputerScissors.classList.remove("active");
-    imageComputerRocks.classList.remove("active");
+    imageComputerScissors.classList.remove.remove("active");
+    imageComputerRocks.classList.remove.remove("active");
 
     message.textContent = "Your turn to play!";
+
+    nextBtn.addEventListener("click", newRound);
+
+    btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
+    // restart game
 }
-
-nextBtn.addEventListener("click", newRound);
-btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
-
-
-// restart game
 
