@@ -153,8 +153,13 @@ function newRound() {
     nextBtn.addEventListener("click", newRound);
 
     btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
-
-
-    // restart game
 }
 
+// restart game
+
+resetBtn.addEventListener("click", () => {
+    scorePlayer.textContent = 0;
+    scoreComputer.textContent = 0;
+
+    playRound();
+});
