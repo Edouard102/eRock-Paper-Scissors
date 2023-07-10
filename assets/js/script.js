@@ -65,7 +65,7 @@ function playRound(e) {
     if (choiceImagePlayer) {
         choiceImagePlayer.style.opacity = 1;
     }
-
+    imagePlayerRps.style.opacity = 0;
 
     let playerChoice = choice.id;
 
@@ -91,16 +91,17 @@ function makeComputerChoice() {
     // choice image
     switch (nbRandom) {
         case 0:
-            imageComputerPaper.classList.add("image-cpaper");
+            imageComputerPaper.style.opacity = 1;
             return paper;
         case 1:
-            imageComputerScissors.classList.add("image-cscissors");
+            imageComputerScissors.style.opacity = 1;
             return scissors;
         default:
-            imageComputerRocks.classList.add("image-crocks");
-            return rocks;
 
+            imageComputerRocks.style.opacity = 1;
+            return rocks;
     }
+
 }
 // check winner 
 
@@ -132,10 +133,11 @@ function victoryPlayer() {
     message.textContent = "You win ! :)";
     scorePlayer.textContent++;
 }
+
 //  new round
 
 function newRound() {
-    btnPlayer.forEach((btn) => {
+    btnPlayer.forEach(function (btn) {
         btn.classList.remove("desactivated");
         btn.classList.remove("active");
 
@@ -144,22 +146,30 @@ function newRound() {
 
     nextBtn.style.visibility = "hidden";
 
-    imageComputerPaper.classList.remove("active");
-    imageComputerScissors.classList.remove("active");
-    imageComputerRocks.classList.remove("active");
+    imagePlayer.forEach(function (image) {
+        image.style.opacity = 0;
+    });
+
+    imageComputer.forEach(function (image) {
+        image.style.opacity = 0;
+    });
+
+    imagePlayerRps.style.opacity = 1;
+
+    imageComputerRps.style.opacity = 1;
 
     message.textContent = "Your turn to play!";
 
     nextBtn.addEventListener("click", newRound);
-  
 }
+
 // next round (new round)
 
-    nextBtn.addEventListener("click", newRound);
+nextBtn.addEventListener("click", newRound);
 
 // play round 
 
-  btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
+btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
 
 // restart game
 

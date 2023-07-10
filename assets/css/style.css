@@ -265,11 +265,11 @@ body {
     }
 
     #next {
-        top: 54%
+        top: 83%
     }
 
     .game-area {
-        top: 245px;
+        top: 293px;
         margin-left: 25%;
     }
 
@@ -286,8 +286,9 @@ body {
     }
 
     .footer {
-        width: 117%;
-        bottom: -160%;
+        width: 93%;
+        bottom: -235%;
+        margin-left: 10%;
     }
 }
 
@@ -300,13 +301,17 @@ body {
         top: 201px;
     }
 
+    #next {
+        top: 88%
+    }
+
     .game-area {
-        top: 200px;
+        top: 270px;
         margin-left: 5%;
     }
 
     .footer {
         width: 117%;
-        bottom: -127%;
+        bottom: -160%;
     }
 }
