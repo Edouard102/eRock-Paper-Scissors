@@ -13,19 +13,24 @@ let nextBtn = document.getElementById("next");
 
 //  variable buttom player 
 
-let btnPlayer = [...document.getElementsByClassName("btn--player")];
+let btnPlayer = [...document.getElementsByClassName("btn")];
 let btnPaper = document.getElementById("bpaper");
 let btnScissors = document.getElementById("bscissors");
 let btnRocks = document.getElementById("bocks");
 
-// variable  computer
+// variable images 
+
+let imageCommon = [...document.getElementsByClassName("image-common")];
+
+// variable  computer images
+
 let imageComputer = [...document.getElementsByClassName("imagerps--computer")];
 let imageComputerRps = document.getElementById("image-crps");
 let imageComputerPaper = document.getElementById("image-cpaper");
 let imageComputerScissors = document.getElementById("image-cscissors");
 let imageComputerRocks = document.getElementById("image-crocks");
 
-// variable player 
+// variable player images
 
 let imagePlayer = [...document.getElementsByClassName("imagerps--player")];
 let imagePlayerRps = document.getElementById("image-prps");
@@ -40,7 +45,7 @@ let imagePlayerRocks = document.getElementById("image-procks");
 function playRound(e) {
 
     // player game buttom (player choice)
-    let choice = e.target.closest(".btn--player");
+    let choice = e.target.closest(".btn");
 
     btnPlayer.forEach((btn) => {
         btn.classList.add("desactivated");
@@ -100,33 +105,19 @@ function makeComputerChoice() {
 // check winner 
 
 function checkWinner(playerChoice, computerChoice) {
-    if (playerChoice == computerChoice) {
-        message.textContent = "Tie !";
+    if (playerChoice === computerChoice) {
+        message.textContent = "Tie!";
         return;
     }
 
-    if (playerChoice == "rocks") {
-        if (computerChoice == "paper") {
-            return victoryComputer();
-        } else if (computerChoice == scissors) {
-            return victoryPlayer();
-        }
-    }
-
-    if (playerChoice == "paper") {
-        if (computerChoice == "scissors") {
-            return victoryComputer();
-        } else if (computerChoice == "rocks") {
-            return victoryPlayer();
-        }
-    }
-
-    if (playerChoice == "scissors") {
-        if (computerChoice == "rocks") {
-            return victoryComputer();
-        } else if (computerChoice == "paper") {
-            return victoryPlayer();
-        }
+    if (
+        (playerChoice === "rocks" && computerChoice === "scissors") ||
+        (playerChoice === "paper" && computerChoice === "rocks") ||
+        (playerChoice === "scissors" && computerChoice === "paper")
+    ) {
+        victoryPlayer();
+    } else {
+        victoryComputer();
     }
 }
 
@@ -154,14 +145,16 @@ function newRound() {
     nextBtn.style.visibility = "hidden";
 
     imageComputerPaper.classList.remove("active");
-    imageComputerScissors.classList.remove.remove("active");
-    imageComputerRocks.classList.remove.remove("active");
+    imageComputerScissors.classList.remove("active");
+    imageComputerRocks.classList.remove("active");
 
     message.textContent = "Your turn to play!";
 
     nextBtn.addEventListener("click", newRound);
 
     btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
+
+
     // restart game
 }
 

@@ -42,7 +42,6 @@ body {
 
 }
 
-
 /* score area*/
 
 .score-area {
@@ -67,7 +66,6 @@ body {
 
 }
 
-
 #reset {
     font-size: 21px;
     grid-column: span 2;
@@ -82,7 +80,7 @@ body {
 
 .control {
     position: relative;
-    left: 35%;
+    left: 40%;
     top: 260px;
     height: 113px;
     display: inline-block;
@@ -98,9 +96,17 @@ body {
     font-size: 1.5rem;
     padding: 9px;
     margin: 6px;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background-color: green;
 }
 
-.btn--player #message {
+.btn:hover {
+    color: red;
+}
+
+.btn #message {
     font-size: 25px;
 }
 
@@ -123,33 +129,14 @@ body {
     -webkit-transform: translate(-50%, 0);
 }
 
-#next.active {
+#next.control {
     visibility: visible;
-}
-
-
-.action {
-    margin-bottom: 40px;
-    text-align: center;
 }
 
 #message {
     font-size: 25px;
 }
 
-.btn--player {
-    border-radius: 15px;
-    transition: all 0.2s ease;
-}
-
-.btn--player {
-    cursor: pointer;
-    background-color: red;
-}
-
-.btn--player:hover {
-    color: red;
-}
 
 /* game area*/
 
@@ -181,13 +168,13 @@ body {
 }
 
 /*images Rock-Paper-Scissors */
+
 .image-common {
     width: 400px;
     height: auto;
     border-style: solid;
     border-width: 3px;
     margin-top: 100px;
-
 }
 
 .image-computer {
@@ -204,43 +191,35 @@ body {
     border-color: black;
 }
 
+/* image computer*/
+
+.imagerps--crps {
+    opacity: 1;
+}
+
+.imagepaper--cpaper,
+.imagescissors--cscissors,
+.imagerocks--crocks {
+    opacity: 0;
+}
+
+/* image player*/
+
+.imagerps--prps {
+    opacity: 1;
+}
+
+.imagepaper--ppaper,
+.imagescissors--pscissors,
+.imagerocks--procks {
+    opacity: 0;
+}
+
+
+/* 
 .chosen-img {
     opacity: 1
-}
-
-
-/* */
-/* .imagerps--computer:first-child { 
-    opacity: 1;
-    position: absolute;
 }*/
-
-/* .imagerps--computer:not(:first-child) {
-    opacity: 0;
-    position: relative;
-} */
-
-.imagerps--computer.desactivated {
-    pointer-events: none;
-    cursor: default;
-}
-
-
-/* */
-/* .imagerps--player:first-child {
-    opacity: 1;
-    position: absolute;
-}
-
-.imagerps--player:not(:first-child) {
-    opacity: 0;
-    position: relative;
-} */
-
-.imagerps--player.desactivated {
-    pointer-events: none;
-    cursor: default;
-}
 
 /* ------------------------------- Media queries-------------------------------------- */
 
