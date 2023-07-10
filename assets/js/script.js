@@ -16,7 +16,7 @@ let nextBtn = document.getElementById("next");
 let btnPlayer = [...document.getElementsByClassName("btn")];
 let btnPaper = document.getElementById("bpaper");
 let btnScissors = document.getElementById("bscissors");
-let btnRocks = document.getElementById("bocks");
+let btnRocks = document.getElementById("brocks");
 
 // variable images 
 
@@ -91,13 +91,13 @@ function makeComputerChoice() {
     // choice image
     switch (nbRandom) {
         case 0:
-            imageComputerPaper.classList.add("active");
+            imageComputerPaper.classList.add("image-cpaper");
             return paper;
         case 1:
-            imageComputerScissors.classList.add("active");
+            imageComputerScissors.classList.add("image-cscissors");
             return scissors;
         default:
-            imageComputerRocks.classList.add("active");
+            imageComputerRocks.classList.add("image-crocks");
             return rocks;
 
     }
@@ -151,9 +151,15 @@ function newRound() {
     message.textContent = "Your turn to play!";
 
     nextBtn.addEventListener("click", newRound);
-
-    btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
+  
 }
+// next round (new round)
+
+    nextBtn.addEventListener("click", newRound);
+
+// play round 
+
+  btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
 
 // restart game
 

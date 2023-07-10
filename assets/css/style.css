@@ -34,7 +34,6 @@ body {
     left: 0;
     bottom: -300%;
     box-sizing: border-box;
-    min-height: 80px;
     padding-top: 5px;
     text-align: center;
     color: #212529;
@@ -82,7 +81,6 @@ body {
     position: relative;
     left: 40%;
     top: 260px;
-    height: 113px;
     display: inline-block;
     margin: 2px;
     text-align: center;
@@ -154,7 +152,6 @@ body {
 .computer {
     background-color: white;
     width: 25%;
-    height: 30px;
     padding: 9px;
     border-radius: 15px;
 }
@@ -162,7 +159,6 @@ body {
 .player {
     background-color: white;
     width: 25%;
-    height: 30px;
     padding: 9px;
     border-radius: 15px;
 }
@@ -171,7 +167,6 @@ body {
 
 .image-common {
     width: 400px;
-    height: auto;
     border-style: solid;
     border-width: 3px;
     margin-top: 100px;
@@ -250,9 +245,9 @@ body {
     }
 }
 
-/* --------- Media queries (max-width: 320px) */
+/* --------- Media queries (max-width: 425px) */
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
 
     .heading {
         font-size: 33px;
@@ -266,13 +261,16 @@ body {
 
     .control {
         left: 9%;
-        top: 201px;
-        height: 160px;
+        top: 249px;
+    }
+
+    #next {
+        top: 54%
     }
 
     .game-area {
-        top: 200px;
-        margin-left: 5%;
+        top: 245px;
+        margin-left: 25%;
     }
 
     .computer {
@@ -285,6 +283,26 @@ body {
 
     .image-common {
         width: 110px;
+    }
+
+    .footer {
+        width: 117%;
+        bottom: -160%;
+    }
+}
+
+/* --------- Media queries (max-width: 320px) */
+
+@media (max-width: 320px) {
+
+
+    .control {
+        top: 201px;
+    }
+
+    .game-area {
+        top: 200px;
+        margin-left: 5%;
     }
 
     .footer {
