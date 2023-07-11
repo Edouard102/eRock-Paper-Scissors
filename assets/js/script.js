@@ -65,6 +65,7 @@ function playRound(e) {
     if (choiceImagePlayer) {
         choiceImagePlayer.style.opacity = 1;
     }
+
     imagePlayerRps.style.opacity = 0;
 
     let playerChoice = choice.id;

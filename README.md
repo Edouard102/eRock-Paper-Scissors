@@ -24,7 +24,7 @@ Immerse yourself in the virtual world of digital battle with eRock-Paper-Scissor
 
 ### User Goals
 
-- Play a game>
+- Play a game
 - Relaxe and have fun
 
 # UX
@@ -54,11 +54,6 @@ Considering the targeted audience the fonts chosen for the websites are Roboto, 
 - Roboto
   It is a sans serif font that is often used in interfaces and digital applications. It has a modern and clean look.
 
-- Orbitron
-  This font has a futuristic and geometric look to it, which could match your game's digital aesthetic.
-
-- Exo
-  It is a sans serif font with a modern and geometric appearance, which can give the impression of advanced technology.
 
 #### Icons
 
