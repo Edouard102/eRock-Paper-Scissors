@@ -1,5 +1,5 @@
 
-//App global variables
+//Add global variables 
 
 // variable score area
 let resetBtn = document.getElementById("reset");
@@ -67,6 +67,7 @@ function playRound(e) {
     }
 
     imagePlayerRps.style.opacity = 0;
+    imageComputerRps.style.opacity = 0;
 
     let playerChoice = choice.id;
 
@@ -93,6 +94,7 @@ function makeComputerChoice() {
     switch (nbRandom) {
         case 0:
             imageComputerPaper.style.opacity = 1;
+
             return paper;
         case 1:
             imageComputerScissors.style.opacity = 1;
