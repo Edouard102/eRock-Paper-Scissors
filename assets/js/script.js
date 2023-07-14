@@ -30,6 +30,7 @@ let imageComputerPaper = document.getElementById("image-cpaper");
 let imageComputerScissors = document.getElementById("image-cscissors");
 let imageComputerRocks = document.getElementById("image-crocks");
 
+
 // variable player images
 
 let imagePlayer = [...document.getElementsByClassName("imagerps--player")];
@@ -52,6 +53,10 @@ function playRound(e) {
         btn.removeEventListener("click", playRound);
     });
 
+    choice.classList.remove("desactivated");
+    choice.classList.add("active");
+
+
     // image choice
     let choiceImagePlayer = null;
 
@@ -67,9 +72,11 @@ function playRound(e) {
     }
 
     imagePlayerRps.style.opacity = 0;
+
     imageComputerRps.style.opacity = 0;
 
     let playerChoice = choice.id;
+
 
     let computerChoice = makeComputerChoice();
 
@@ -77,6 +84,7 @@ function playRound(e) {
 
     nextBtn.style.visibility = "visible";
 }
+
 
 // Computer choice
 
@@ -94,18 +102,16 @@ function makeComputerChoice() {
     switch (nbRandom) {
         case 0:
             imageComputerPaper.style.opacity = 1;
-
             return paper;
         case 1:
             imageComputerScissors.style.opacity = 1;
             return scissors;
         default:
-
             imageComputerRocks.style.opacity = 1;
             return rocks;
     }
-
 }
+
 // check winner 
 
 function checkWinner(playerChoice, computerChoice) {
@@ -123,6 +129,7 @@ function checkWinner(playerChoice, computerChoice) {
     } else {
         victoryComputer();
     }
+
 }
 
 //  update score
@@ -149,6 +156,7 @@ function newRound() {
 
     nextBtn.style.visibility = "hidden";
 
+
     imagePlayer.forEach(function (image) {
         image.style.opacity = 0;
     });
@@ -158,7 +166,6 @@ function newRound() {
     });
 
     imagePlayerRps.style.opacity = 1;
-
     imageComputerRps.style.opacity = 1;
 
     message.textContent = "Your turn to play!";

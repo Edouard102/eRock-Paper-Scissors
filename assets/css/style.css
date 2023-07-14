@@ -108,6 +108,15 @@ body {
     font-size: 25px;
 }
 
+.btn.desactivated {
+    background-color: white;
+    cursor: default;
+}
+
+.btn.active {
+    background-color: blue;
+}
+
 #next {
     position: absolute;
     top: 100%;
