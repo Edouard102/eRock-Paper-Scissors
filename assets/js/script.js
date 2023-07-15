@@ -115,15 +115,15 @@ function makeComputerChoice() {
 // check winner 
 
 function checkWinner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice) {
+    if (playerChoice === "b" + computerChoice) {
         message.textContent = "Tie!";
         return;
     }
 
     if (
-        (playerChoice === "rocks" && computerChoice === "scissors") ||
-        (playerChoice === "paper" && computerChoice === "rocks") ||
-        (playerChoice === "scissors" && computerChoice === "paper")
+        (playerChoice === "brocks" && computerChoice === "scissors") ||
+        (playerChoice === "bpaper" && computerChoice === "rocks") ||
+        (playerChoice === "bscissors" && computerChoice === "paper")
     ) {
         victoryPlayer();
     } else {
