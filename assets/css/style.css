@@ -79,13 +79,19 @@ body {
 
 .control {
     position: relative;
-    left: 40%;
+    left: 50%;
     top: 260px;
     display: inline-block;
     margin: 2px;
     text-align: center;
     background-color: white;
     border-radius: 15px;
+
+    transform: translate(-50%, +50%);
+    -o-transform: translate(-50%, +50%);
+    -ms-transform: translate(-50%, +50%);
+    -moz-transform: translate(-50%, +50%);
+    -webkit-transform: translate(-50%, +50%);
 }
 
 /* buttom*/
@@ -114,7 +120,7 @@ body {
 }
 
 .btn.active {
-    background-color: blue;
+    background-color: white;
 }
 
 #next {
@@ -219,19 +225,13 @@ body {
     opacity: 0;
 }
 
-
-/* 
-.chosen-img {
-    opacity: 1
-}*/
-
 /* ------------------------------- Media queries-------------------------------------- */
 
 /* --------- Media queries (max-width: 1024px) */
 @media (max-width: 1024px) {
 
     .control {
-        left: 30%;
+        top: 205px;
     }
 
     .game-area {
@@ -241,17 +241,10 @@ body {
 
     .image-common {
         width: 285px;
+
     }
 
 
-}
-
-/* --------- Media queries (max-width: 768px) */
-@media (max-width: 768px) {
-
-    .control {
-        left: 23%;
-    }
 }
 
 /* --------- Media queries (max-width: 425px) */
@@ -264,13 +257,11 @@ body {
     }
 
     .score-area {
-        left: 60%;
         grid-template-columns: repeat(2, 150px);
     }
 
     .control {
-        left: 9%;
-        top: 249px;
+        top: 200px;
     }
 
     #next {
@@ -278,8 +269,98 @@ body {
     }
 
     .game-area {
-        top: 293px;
-        margin-left: 25%;
+        top: 291px;
+    }
+
+    .computer {
+        width: 50%;
+    }
+
+    .player {
+        width: 50%;
+    }
+
+    .image-common {
+        width: 178px;
+        height: auto;
+    }
+
+    .image-computer {
+        left: 4%;
+    }
+
+    .image-player {
+        right: 4%;
+    }
+
+    .footer {
+        width: 90%;
+        left: 21px;
+        bottom: -264%;
+    }
+}
+
+/* --------- Media queries (max-width: 375px) */
+
+@media (max-width: 375px) {
+    .heading {
+        margin-left: 3%;
+    }
+
+    .score-area {
+        left: 50%;
+        top: -25px;
+    }
+
+    .control {
+        top: 151px;
+        left: 50%;
+    }
+
+    #next {
+        top: 90%
+    }
+
+    .game-area {
+        top: 260px;
+    }
+
+    .image-common {
+        width: 157px;
+        height: auto;
+    }
+
+    .footer {
+        bottom: -188%;
+    }
+}
+
+/* --------- Media queries (max-width: 320px) */
+
+@media (max-width: 320px) {
+
+    .heading {
+        margin-left: 17%;
+    }
+
+    .score-area {
+        left: 62%;
+        top: 2px;
+    }
+
+    .control {
+        top: 135px;
+        left: 62%;
+    }
+
+    #next {
+        top: 88%;
+        padding: 10px 21px;
+
+    }
+
+    .game-area {
+        top: 249px;
     }
 
     .computer {
@@ -290,37 +371,13 @@ body {
         width: 60%;
     }
 
-    .image-common {
-        width: 110px;
-    }
-
-    .footer {
-        width: 93%;
-        bottom: -235%;
-        margin-left: 10%;
-    }
-}
-
-/* --------- Media queries (max-width: 320px) */
-
-@media (max-width: 320px) {
-
-
-    .control {
-        top: 201px;
-    }
-
-    #next {
-        top: 88%
-    }
-
-    .game-area {
-        top: 270px;
-        margin-left: 5%;
+    .image-player {
+        right: -26%;
     }
 
     .footer {
         width: 117%;
-        bottom: -160%;
+        left: 12px;
+        bottom: -172%;
     }
 }
