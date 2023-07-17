@@ -190,14 +190,15 @@ body {
     margin-top: 100px;
 }
 
-.image-computer {
+.image-player {
     position: absolute;
     top: 10px;
     left: 9%;
     border-color: #711c91;
 }
 
-.image-player {
+
+.image-computer {
     position: absolute;
     top: 10px;
     right: 9%;
@@ -284,12 +285,12 @@ body {
         height: auto;
     }
 
-    .image-computer {
-        right: 4%;
-    }
-
     .image-player {
         left: 4%;
+    }
+
+    .image-computer {
+        right: 4%;
     }
 
     .footer {
