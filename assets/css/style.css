@@ -36,8 +36,8 @@ body {
     box-sizing: border-box;
     padding-top: 5px;
     text-align: center;
-    color: #212529;
-    background-color: white;
+    color: #0abdc6;
+    background-color: #091833;
 
 }
 
@@ -53,7 +53,8 @@ body {
     gap: 20px;
     text-align: center;
     font-size: 35px;
-    background-color: white;
+    color: #0abdc6;
+    background-color: #091833;
     padding: 20px;
     border-radius: 15px;
 
@@ -72,7 +73,7 @@ body {
 }
 
 #reset:hover {
-    color: red;
+    color: #ea00d9;
 }
 
 /* control*/
@@ -80,11 +81,12 @@ body {
 .control {
     position: relative;
     left: 50%;
-    top: 260px;
+    top: 220px;
     display: inline-block;
     margin: 2px;
     text-align: center;
-    background-color: white;
+    color: #ea00d9;
+    background-color: #091833;
     border-radius: 15px;
 
     transform: translate(-50%, +50%);
@@ -103,11 +105,11 @@ body {
     border-radius: 15px;
     transition: all 0.2s ease;
     cursor: pointer;
-    background-color: green;
+    background-color: #0abdc6;
 }
 
 .btn:hover {
-    color: red;
+    color: #ea00d9;
 }
 
 .btn #message {
@@ -115,12 +117,12 @@ body {
 }
 
 .btn.desactivated {
-    background-color: white;
+    background-color: #091833;
     cursor: default;
 }
 
 .btn.active {
-    background-color: white;
+    background-color: #0abdc6;
 }
 
 #next {
@@ -129,8 +131,8 @@ body {
     left: 50%;
     margin-top: 20px;
     padding: 10px 30px;
-    background-color: green;
-    color: blue;
+    background-color: #0abdc6;
+    color: #ea00d9;
     border-radius: 15%;
     visibility: hidden;
     cursor: pointer;
@@ -165,14 +167,14 @@ body {
 }
 
 .computer {
-    background-color: white;
+    background-color: #711c91;
     width: 25%;
     padding: 9px;
     border-radius: 15px;
 }
 
 .player {
-    background-color: white;
+    background-color: #0abdc6;
     width: 25%;
     padding: 9px;
     border-radius: 15px;
@@ -181,6 +183,7 @@ body {
 /*images Rock-Paper-Scissors */
 
 .image-common {
+
     width: 400px;
     border-style: solid;
     border-width: 3px;
@@ -190,15 +193,15 @@ body {
 .image-computer {
     position: absolute;
     top: 10px;
-    right: 9%;
-    border-color: black;
+    left: 9%;
+    border-color: #711c91;
 }
 
 .image-player {
     position: absolute;
     top: 10px;
-    left: 9%;
-    border-color: blue;
+    right: 9%;
+    border-color: #0abdc6;
 }
 
 /* image computer*/
@@ -235,16 +238,12 @@ body {
     }
 
     .game-area {
-        top: 249px;
-
+        top: 287px;
     }
 
     .image-common {
         width: 285px;
-
     }
-
-
 }
 
 /* --------- Media queries (max-width: 425px) */
