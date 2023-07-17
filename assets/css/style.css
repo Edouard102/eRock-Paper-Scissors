@@ -26,6 +26,18 @@ body {
     text-align: center;
     margin: 12px 0;
 
+    /* Credit to George Dimitriadis https://stackoverflow.com/questions/23968961/css-how-can-i-make-a-font-readable-over-any-color
+        for the following css to make text more readable.*/
+    text-shadow:
+        0.02em 0 black,
+        0 0.02em black,
+        -0.02em 0 black,
+        0 -0.02em black,
+        -0.02em -0.02em black,
+        -0.02em 0.02em black,
+        0.02em -0.02em black,
+        0.02em 0.02em black;
+
 }
 
 .footer {
@@ -164,18 +176,19 @@ body {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .computer {
+    /* color: #0abdc6; */
     background-color: #711c91;
-    width: 25%;
     padding: 9px;
     border-radius: 15px;
 }
 
 .player {
     background-color: #0abdc6;
-    width: 25%;
     padding: 9px;
     border-radius: 15px;
 }
@@ -183,18 +196,18 @@ body {
 /*images Rock-Paper-Scissors */
 
 .image-common {
-
     width: 400px;
     border-style: solid;
     border-width: 3px;
     margin-top: 100px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .image-player {
     position: absolute;
     top: 10px;
     left: 9%;
-    border-color: #711c91;
+    border-color: #0abdc6;
 }
 
 
@@ -202,7 +215,7 @@ body {
     position: absolute;
     top: 10px;
     right: 9%;
-    border-color: #0abdc6;
+    border-color: #711c91;
 }
 
 /* image computer*/
@@ -257,27 +270,30 @@ body {
     }
 
     .score-area {
-        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: 4px 0px;
+        grid-template-columns: repeat(2, 100px);
+        font-size: 16px;
     }
 
     .control {
-        top: 200px;
+        top: 83px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
     }
 
     #next {
-        top: 83%
+        top: 93%;
+        font-size: 0.9rem;
     }
 
     .game-area {
-        top: 291px;
-    }
-
-    .computer {
-        width: 50%;
+        top: 177px;
     }
 
     .player {
-        width: 50%;
+        width: 70%;
     }
 
     .image-common {
@@ -296,7 +312,7 @@ body {
     .footer {
         width: 90%;
         left: 21px;
-        bottom: -264%;
+        bottom: -225%;
     }
 }
 
@@ -309,11 +325,11 @@ body {
 
     .score-area {
         left: 50%;
-        top: -25px;
+        top: 11px;
     }
 
     .control {
-        top: 151px;
+        top: 90px;
         left: 50%;
     }
 
@@ -322,12 +338,17 @@ body {
     }
 
     .game-area {
-        top: 260px;
+        top: 172px;
     }
 
     .image-common {
-        width: 157px;
+        top: -26px;
+        width: 147px;
         height: auto;
+    }
+
+    .image-player {
+        left: 8%;
     }
 
     .footer {
@@ -344,13 +365,13 @@ body {
     }
 
     .score-area {
-        left: 62%;
-        top: 2px;
+        left: 56%;
+        top: 49px;
     }
 
     .control {
-        top: 135px;
-        left: 62%;
+        left: 56%;
+        top: 80px;
     }
 
     #next {
@@ -360,7 +381,8 @@ body {
     }
 
     .game-area {
-        top: 249px;
+        top: 164px;
+        font-size: 1.0em;
     }
 
     .computer {
@@ -372,12 +394,17 @@ body {
     }
 
     .image-player {
-        right: -26%;
+        left: 4%;
+    }
+
+    .image-computer {
+        right: -6%;
     }
 
     .footer {
-        width: 117%;
+        width: 100%;
         left: 12px;
-        bottom: -172%;
+        bottom: -157%;
+        font-size: 18px;
     }
 }
