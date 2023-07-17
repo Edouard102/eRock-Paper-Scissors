@@ -49,11 +49,10 @@ The targeted audience is international with an age range of 11 or 12 years old a
 
 #### Fonts
 
-Considering the targeted audience the fonts chosen for the websites are Roboto, Orbitron and Exo.
+Considering the targeted audience the fonts chosen for the websites are Roboto.
 
 - Roboto
   It is a sans serif font that is often used in interfaces and digital applications. It has a modern and clean look.
-
 
 #### Icons
 
@@ -74,75 +73,37 @@ choix des couleur doit etres encor determier
 #### Images
 
 Images will be used for illustration purposes.
-pierre
-papier
-ciseaux
-devron etre identique in icons
+
+- Rock
+- Paper
+- Scissors
 
 #### Styling and Feeling
 
 The website is a gaming platform. It uses simple colours to provide the feeling of easy accessibility.
 It presents a clean, playful, welcoming and trustworthy feel in order to bring quality information.
 
+#### Home
+
+- The home page is composed of the main title: “eRock-Paper-Scissors”. This welcome and invites users to discover the website and set the mood and feel of the website.
+
 #### header
+
+- title of the web site “eRock-Paper-Scissors”
+
+#### body
+
+## score area
+
+## control area
+
+## play ground
 
 #### footer
 
 - rules
-- contact
-- copyright
-
-#### navigation bar
-
--
--
-
-#### Home
-
-- The home page is composed of the main title: “eRock-Paper-Scissors” and a slogan: “Your destiny between your fingers”. . This welcome and invites users to discover the website and set the mood and feel of the website.
--
-
-#### Contact
-
-The contact page is very simple and offer users a way to reach out to the website owner.
-EmailJS has been implemented and allows the management of emails without needing the server side. It has been set to send an automatic email back to the user for better user experience.
-
-There are four fields to fill up:
-
-Your name: → Who the person is.
-Email address: → To be answered back.
-Reason: → Dropdown menu to select from different options.
-Tell us more: → A textarea to provide additional information.
-A send button is displayed as well to send the form.
-mettre image du sitesur le titre
 
 # Features
-
-### **Existing Features**
-
-#### Repeated Features
-
-On all pages and devices there is ........
-
-**FEATURE** DESCRIPTION OF THE FEATURE
-
-**FEATURE** DESCRIPTION OF THE FEATURE
-
-All pages feature .... SOMETHING FOR THIS PURPOSE ....
-
-#### Home
-
-DESCRIPTION OF THE FEATURE
-
-#### PAGE NAME
-
-DESCRIPTION OF THE FEATURE
-
-#### PAGE NAME
-
-DESCRIPTION OF THE FEATURE
-
-[**:back:** _Table of Content_](#Table-of-Content-:)
 
 ### **Features to Implement in the Future Versions**
 
@@ -150,6 +111,8 @@ DESCRIPTION OF THE FEATURE
 
 - extension of the game with big bang theory version
 - add music
+- Contact
+- copyright
 
 # Technologies Used
 
@@ -191,23 +154,15 @@ Firefox
 
 ### Solved
 
-Issue :  
-Solve :
+Issue : undefined in playRound function:
 
-Issue :  
-Solve :
+Solution : remove the call new game function from the reset function.
 
-### Unsolved
-
-Issue :
-
-Issue :
+The reasons: The playround function uses an event to select the click button from the player during a game and calling this function during a reset created the bug, as it is not a game but simply a reset.
 
 # Credit
 
 ### Content :
-
-"TO BE ADJUSTED AND COMPLETED"
 
 [W3schools](https://www.w3schools.com/)  
 For general database on software development.
@@ -224,29 +179,14 @@ For tips on vertical alignment in CSS.
 [USERWAY](https://userway.org/blog/html-required-versus-aria-required)  
 For explanation on best use of the required attribute.
 
-[SJ_OWOW](https://stackoverflow.com/questions/52378422/how-to-vertically-align-text-within-div-element-css)  
-For vertical align code snippet used in css.
-
 [coder coder!](https://coder-coder.com/background-image-opacity/#:~:text=There's%20no%20CSS%20property%20that,for%20the%20background%2Dimage%20property.)
 For explanation and code snippet on overlay on background image used in css.
 
 ### Media
 
-##### Social Media links :
-
-[Facebook](WEBSITE LINK)  
-[Instagram](WEBSITE LINK)  
-[Pinterest](WEBSITE LINK)
-
 ##### Images :
 
-Some of the images used on the website are taken from a ...............
-
-- Pictures from Pexels:
-
-  - For the "PROFILE"  
-    [Photo by ARTIST NAME](PICTURE LINK)  
-    [Photo by ARTIST NAME](PICTURE LINK)
+The images used on the website are taken from a free source on the google.
 
 ### Aknowledgements :
 

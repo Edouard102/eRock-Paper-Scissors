@@ -186,6 +186,4 @@ btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
 resetBtn.addEventListener("click", () => {
     scorePlayer.textContent = 0;
     scoreComputer.textContent = 0;
-
-    playRound();
 });
