@@ -1,13 +1,9 @@
-`python3 -m http.server`
 
 # **eRock-Paper-Scissors**
 
 ![mockup](assets/images/images_readme/rps_multiscreen.png)
 
 https://ui.dev/amiresponsive?url=https://edouard102.github.io/eRock-Paper-Scissors/
-Check out the other mockup:
-
-- ["PAGE NAME"](assets/images/README-images/mockup/ami-responsive-"PAGE NAME".png)
 
 #### Visit the live Website : **https://edouard102.github.io/eRock-Paper-Scissors/**.
 
@@ -33,7 +29,7 @@ The targeted audience is international with an age range of 11 or 12 years old a
 1. As a first time user :
 
    - I want the website to be appealing.
-   - the navigation to be easy and intuitive.
+   - The navigation to be easy and intuitive.
    - I want to understand immediately what is the website about without the need of looking for it.
 
 2. As a returning user :
@@ -77,47 +73,46 @@ It presents a clean, playful, welcoming and trustworthy feel in order to bring q
 
 - The home page is composed of the main title: “eRock-Paper-Scissors”. This welcome and invites users to discover the website and set the mood and feel of the website.
 
-#### header
+#### Header
 
 - Will display the title of the web site “eRock-Paper-Scissors”
 
 ![title.](assets/images/images_readme/rps_title.png)
 
-#### body
+#### Body
 
-- the body will be displayed on 3 parts with the score, the control (choice of the player) and the game (choice made by the player and the computer)
+- The body will be displayed on 3 parts with the score, the control (choice of the player) and the game (choice made by the player and the computer)
 
-## score area
+## Score area
 
 - This section will allow the user to follow the score. And reset the game.
 
 ![score.](assets/images/images_readme/rps_score.png)
 
-## control area
+## Control area
 
  - This section will allow the user to play the game. The user will be able to easily see icons to make the choice to play the game.
 
 ![choice.](assets/images/images_readme/rps_choice.png)
 
-## the play gground
-This section will allow the user to easily see the choice made.
+## The play ground
+
+- This section will allow the user to easily see the choice made.
 
 ![playground.](assets/images/images_readme/rps_playground.png)
 
-#### footer
+#### Footer
 
-- the footer will diplays the rules of the game.
+- The footer will diplays the rules of the game.
 
 ![rule.](assets/images/images_readme/rps_rule.png)
 
 ### **Features to Implement in the Future Versions**
 
-#### FEATURES TO BE ADDED
-
-- extension of the game with big bang theory version
-- add music
+- Extension of the game with big bang theory version
+- Add music
 - Contact
-- copyright
+- Copyright
 
 # Technologies Used
 
@@ -127,27 +122,27 @@ This project uses HTML, CSS and JavaScript.
 
 ### Frameworks, Libraries and Programs
 
-- [Google Fonts](https://fonts.google.com/)  
+* [Google Fonts](https://fonts.google.com/)  
   For importing fonts (**_FONT NAME_** and **_FONT NAME_**) into the style.css file.
 
-- [Fontawesome](https://fontawesome.com/icons?d=gallery)  
+* [Fontawesome](https://fontawesome.com/icons?d=gallery)  
   For using icons throughout the website.
 
-- [codeanywhere](https://app.codeanywhere.com/)  
+* [codeanywhere](https://app.codeanywhere.com/)  
   For Integrated Development Environment.
 
-- * [GitPod](https://www.gitpod.io/)  
+ * [GitPod](https://www.gitpod.io/)  
   For Integrated Development Environment.
 
-- [GitHub](https://github.com/)  
+* [GitHub](https://github.com/)  
   For storing the repository.
 
-- [GitHub Pages](https://pages.github.com/)  
+* [GitHub Pages](https://pages.github.com/)  
   For deploying the website live.
 
 # Deployment
-To make this website accessible to the public, Walking Around 
-has been deployed on [GitHub Pages](https://pages.github.com/) as follow :
+
+To make this website accessible to the public, eRock-Paper-Scissors has been deployed on [GitHub Pages](https://pages.github.com/) as follow :
 
 
 1. Log in to my GitHub account.
@@ -196,15 +191,16 @@ No errors were returned when passing through the official [W3C validator]
 No errors were found when passing through the official [Jshint validator]
 
 - The following metrics were returned: 
-      - There are 16 functions in this file.
 
-      - Function with the largest signature take 2 arguments, while the median is 1.
+      * There are 16 functions in this file.
 
-      - Largest function has 17 statements in it, while the median is 2.
+      * Function with the largest signature take 2 arguments, while the median is 1.
 
-      - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
+      * Largest function has 17 statements in it, while the median is 2.
 
- - accessibility
+      * The most complex function has a cyclomatic complexity value of 8 while the median is 1.
+
+ - Accessibility
 
   -I confirmed the accesbility by running it throught the lighthouse in devtools 
 
