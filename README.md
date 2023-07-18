@@ -3,18 +3,12 @@
 # **eRock-Paper-Scissors**
 
 ![mockup](assets/images/README-images/ami-responsive-"home".png)
-
+https://ui.dev/amiresponsive?url=https://edouard102.github.io/eRock-Paper-Scissors/
 Check out the other mockup:
 
 - ["PAGE NAME"](assets/images/README-images/mockup/ami-responsive-"PAGE NAME".png)
-- ["PAGE NAME"](assets/images/README-images/mockup/ami-responsive-"PAGE NAME".png)
-- ["PAGE NAME"](assets/images/README-images/mockup/ami-responsive-"PAGE NAME".png)
-- ["PAGE NAME"](assets/images/README-images/mockup/ami-responsive-"PAGE NAME".png)
-- ["PAGE NAME"](assets/images/README-images/mockup/ami-responsive-"PAGE NAME".png)
 
-#### Visit the live Website : **["WEBSITE NAME"]("WEBSITE LINK")**.
-
-SHORT DESCRIPTION AND DEFINITION OF THE WEBSITE STATUS AND GOALS
+#### Visit the live Website : **https://edouard102.github.io/eRock-Paper-Scissors/**.
 
 # Project
 
@@ -41,9 +35,8 @@ The targeted audience is international with an age range of 11 or 12 years old a
    - the navigation to be easy and intuitive.
    - I want to understand immediately what is the website about without the need of looking for it.
 
-2. As a returning user : I want to see THAT ....
+2. As a returning user :
    - Challenge myself on the game.
-   - Tocontact and get information on the website owner.
 
 ### **Design Choices**
 
@@ -58,17 +51,11 @@ Considering the targeted audience the fonts chosen for the websites are Roboto.
 
 - FontAwesome icons will be used for better user experience.
 
-Rock
-Paper
-Scissors
-
-the same color scheme as the website.
-
 #### Colors
 
 Cyberpunk color palette: Mix dark and deep colors like black, purple, deep blue and dark pink to create a futuristic and mysterious atmosphere.
 
-choix des couleur doit etres encor determier
+![cyberpunk_palette.](assets/images_readme/cyberpunk_color_palette.png)
 
 #### Images
 
@@ -83,27 +70,29 @@ Images will be used for illustration purposes.
 The website is a gaming platform. It uses simple colours to provide the feeling of easy accessibility.
 It presents a clean, playful, welcoming and trustworthy feel in order to bring quality information.
 
+# Features
+
 #### Home
 
 - The home page is composed of the main title: “eRock-Paper-Scissors”. This welcome and invites users to discover the website and set the mood and feel of the website.
 
 #### header
 
-- title of the web site “eRock-Paper-Scissors”
+- Wil display the title of the web site “eRock-Paper-Scissors”
 
 #### body
+
+- the body will be displayed on 3 parts with the score, the control (choice of the player) and the game (choice made by the player and the computer)
 
 ## score area
 
 ## control area
 
-## play ground
+## the game
 
 #### footer
 
-- rules
-
-# Features
+- the footer will diplays the rules of the game.
 
 ### **Features to Implement in the Future Versions**
 
@@ -145,10 +134,32 @@ This project uses HTML, CSS and JavaScript.
 
 I have tried the site on several browsers and it works correctly.
 
-Safari
-Google Chrome
-Microsft Edge
-Firefox
+- Safari
+- Google Chrome
+- Microsft Edge
+- Firefox
+
+# Validator testing
+
+- HTML
+
+No errors were found when passing through the official [(Jigsaw) validator]
+
+- CSS
+
+No errors were returned when passing through the official [W3C validator]
+
+- JavaScript
+
+No errors were found when passing through the official [Jshint validator]
+
+- The following metrics were returned: - There are 13 functions in this file.
+
+        - Function with the largest signature take 2 arguments, while the median is 1.
+
+        - Largest function has 17 statements in it, while the median is 2.
+
+        - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 # Bugs
 

@@ -41,11 +41,11 @@ let imagePlayerRocks = document.getElementById("image-procks");
 
 
 
-// play game
+// play game when user click on a button
 
 function playRound(e) {
 
-    // player game buttom (player choice)
+    // player choice selection
     let choice = e.target.closest(".btn");
 
     btnPlayer.forEach((btn) => {
@@ -57,7 +57,7 @@ function playRound(e) {
     choice.classList.add("active");
 
 
-    // image choice
+    // shows image choice
     let choiceImagePlayer = null;
 
     if (e.target === btnPaper) {
@@ -129,7 +129,6 @@ function checkWinner(playerChoice, computerChoice) {
     } else {
         victoryComputer();
     }
-
 }
 
 //  update score
@@ -144,7 +143,7 @@ function victoryPlayer() {
     scorePlayer.textContent++;
 }
 
-//  new round
+// next round 
 
 function newRound() {
     btnPlayer.forEach(function (btn) {
@@ -181,7 +180,7 @@ nextBtn.addEventListener("click", newRound);
 
 btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
 
-// restart game
+// restart game (reset score)
 
 resetBtn.addEventListener("click", () => {
     scorePlayer.textContent = 0;
