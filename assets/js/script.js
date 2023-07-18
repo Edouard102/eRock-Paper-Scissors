@@ -185,4 +185,29 @@ btnPlayer.forEach((btn) => btn.addEventListener("click", playRound));
 resetBtn.addEventListener("click", () => {
     scorePlayer.textContent = 0;
     scoreComputer.textContent = 0;
+
+    btnPlayer.forEach(function (btn) {
+        btn.classList.remove("desactivated");
+        btn.classList.remove("active");
+
+        btn.addEventListener("click", playRound);
+    });
+
+    nextBtn.style.visibility = "hidden";
+
+
+    imagePlayer.forEach(function (image) {
+        image.style.opacity = 0;
+    });
+
+    imageComputer.forEach(function (image) {
+        image.style.opacity = 0;
+    });
+
+    imagePlayerRps.style.opacity = 1;
+    imageComputerRps.style.opacity = 1;
+
+    message.textContent = "Your turn to play!";
+
+    nextBtn.addEventListener("click", newRound);
 });

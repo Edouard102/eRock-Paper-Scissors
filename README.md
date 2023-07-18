@@ -2,7 +2,8 @@
 
 # **eRock-Paper-Scissors**
 
-![mockup](assets/images/README-images/ami-responsive-"home".png)
+![mockup](assets/images/images_readme/rps_multiscreen.png)
+
 https://ui.dev/amiresponsive?url=https://edouard102.github.io/eRock-Paper-Scissors/
 Check out the other mockup:
 
@@ -55,7 +56,7 @@ Considering the targeted audience the fonts chosen for the websites are Roboto.
 
 Cyberpunk color palette: Mix dark and deep colors like black, purple, deep blue and dark pink to create a futuristic and mysterious atmosphere.
 
-![cyberpunk_palette.](assets/images_readme/cyberpunk_color_palette.png)
+![cyberpunk_palette.](assets/images/images_readme/cyberpunk_palette.png)
 
 #### Images
 
@@ -79,20 +80,33 @@ It presents a clean, playful, welcoming and trustworthy feel in order to bring q
 #### header
 
 - Wil display the title of the web site “eRock-Paper-Scissors”
-
+![title.](assets/images/images_readme/rps_title.png)
 #### body
 
 - the body will be displayed on 3 parts with the score, the control (choice of the player) and the game (choice made by the player and the computer)
+![title.](assets/images/images_readme/rps_title.png)
 
 ## score area
 
+- This section will allow the user to follow the score. And reset the game.
+
+![score.](assets/images/images_readme/rps_score.png)
+
 ## control area
 
+ - This section will allow the user to play the game. The user will be able to easily see icons to make the choice to play the game.
+
+![choice.](assets/images/images_readme/rps_choice.png)
+
 ## the game
+
+![playground.](assets/images/images_readme/rps_playground.png)
 
 #### footer
 
 - the footer will diplays the rules of the game.
+
+![rule.](assets/images/images_readme/rps_rule.png)
 
 ### **Features to Implement in the Future Versions**
 
@@ -120,6 +134,9 @@ This project uses HTML, CSS and JavaScript.
 - [codeanywhere](https://app.codeanywhere.com/)  
   For Integrated Development Environment.
 
+- * [GitPod](https://www.gitpod.io/)  
+  For Integrated Development Environment.
+
 - [GitHub](https://github.com/)  
   For storing the repository.
 
@@ -127,8 +144,27 @@ This project uses HTML, CSS and JavaScript.
   For deploying the website live.
 
 # Deployment
+To make this website accessible to the public, Walking Around 
+has been deployed on [GitHub Pages](https://pages.github.com/) as follow :
 
-## Live Deployment
+
+1. Log in to my GitHub account.
+    *  You need to sign up on your account[GitHub](https://github.com/).
+
+2. Go to my **Repositories** and select the repository corresponding :[eRock-Paper-Scissors](https://github.com/Edouard102/eRock-Paper-Scissors).
+
+3. Navigate to **Settings** :
+
+![settings](assets/images/images_readme/rps_settings.png)
+
+4. Scroll down to the **GitHub Pages** section.
+5. Click on the **None** dropdown menu and select the branch to publish : **master**.
+6. Click on **Save**.
+7. The website is now deployed.
+
+The link to the website is found in the **GitHub Pages** section of the repository settings.
+
+![website link](assets/images/images_readme/rps_live.png)
 
 # Testing
 
@@ -145,21 +181,24 @@ I have tried the site on several browsers and it works correctly.
 
 No errors were found when passing through the official [(Jigsaw) validator]
 
+![website link](assets/images/images_readme/rps_html.png)
 - CSS
 
 No errors were returned when passing through the official [W3C validator]
 
+![website link](assets/images/images_readme/rps_css.png)
 - JavaScript
 
 No errors were found when passing through the official [Jshint validator]
 
-- The following metrics were returned: - There are 13 functions in this file.
+- The following metrics were returned: 
+      - There are 16 functions in this file.
 
-        - Function with the largest signature take 2 arguments, while the median is 1.
+      - Function with the largest signature take 2 arguments, while the median is 1.
 
-        - Largest function has 17 statements in it, while the median is 2.
+      - Largest function has 17 statements in it, while the median is 2.
 
-        - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
+      - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 # Bugs
 
@@ -197,7 +236,7 @@ For explanation and code snippet on overlay on background image used in css.
 
 ##### Images :
 
-The images used on the website are taken from a free source on the google.
+The images used on the website are taken from an open source site.
 
 ### Aknowledgements :
 
