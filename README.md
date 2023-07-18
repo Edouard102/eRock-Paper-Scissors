@@ -79,12 +79,13 @@ It presents a clean, playful, welcoming and trustworthy feel in order to bring q
 
 #### header
 
-- Wil display the title of the web site “eRock-Paper-Scissors”
+- Will display the title of the web site “eRock-Paper-Scissors”
+
 ![title.](assets/images/images_readme/rps_title.png)
+
 #### body
 
 - the body will be displayed on 3 parts with the score, the control (choice of the player) and the game (choice made by the player and the computer)
-![title.](assets/images/images_readme/rps_title.png)
 
 ## score area
 
@@ -98,7 +99,8 @@ It presents a clean, playful, welcoming and trustworthy feel in order to bring q
 
 ![choice.](assets/images/images_readme/rps_choice.png)
 
-## the game
+## the play gground
+This section will allow the user to easily see the choice made.
 
 ![playground.](assets/images/images_readme/rps_playground.png)
 
@@ -155,7 +157,7 @@ has been deployed on [GitHub Pages](https://pages.github.com/) as follow :
 
 3. Navigate to **Settings** :
 
-![settings](assets/images/images_readme/rps_settings.png)
+![settings](assets/images/images_readme/rps_setting.png)
 
 4. Scroll down to the **GitHub Pages** section.
 5. Click on the **None** dropdown menu and select the branch to publish : **master**.
@@ -181,12 +183,14 @@ I have tried the site on several browsers and it works correctly.
 
 No errors were found when passing through the official [(Jigsaw) validator]
 
-![website link](assets/images/images_readme/rps_html.png)
+![Jigsaw validator](assets/images/images_readme/rps_html.png)
+
 - CSS
 
 No errors were returned when passing through the official [W3C validator]
 
-![website link](assets/images/images_readme/rps_css.png)
+![w3c validator](assets/images/images_readme/rps_css.png)
+
 - JavaScript
 
 No errors were found when passing through the official [Jshint validator]
@@ -199,6 +203,12 @@ No errors were found when passing through the official [Jshint validator]
       - Largest function has 17 statements in it, while the median is 2.
 
       - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
+
+ - accessibility
+
+  -I confirmed the accesbility by running it throught the lighthouse in devtools 
+
+![lighthouse](assets/images/images_readme/rps_lighthouse.png)
 
 # Bugs
 
